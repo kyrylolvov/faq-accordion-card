@@ -215,4 +215,83 @@ h1 {
 .closedText {
   display: none;
 }
+
+@media (max-width: 1032px) {
+  .box-wrap {
+    width: 320px;
+    overflow: visible;
+    background: url(/images/bg-pattern-mobile.svg);
+    background-position: 50% 0;
+    background-color: white;
+    background-repeat: no-repeat;
+  }
+  .illustration-woman {
+    width: 240px;
+    height: 182px;
+    margin-left: 40px;
+    margin-top: -110px;
+  }
+  .box-image {
+    position: absolute;
+    margin-left: 30px;
+    margin-top: -40px;
+    width: 96px;
+    -webkit-animation: floating 3s ease-in-out infinite;
+            animation: floating 3s ease-in-out infinite;
+  }
+  @-webkit-keyframes floating {
+    0% {
+      -webkit-filter: drop-shadow(0px 15px 5px rgba(0, 0, 0, 0.4));
+              filter: drop-shadow(0px 15px 5px rgba(0, 0, 0, 0.4));
+      -webkit-transform: translatey(0px);
+              transform: translatey(0px);
+    }
+    50% {
+      -webkit-filter: drop-shadow(0px 25px 5px rgba(0, 0, 0, 0.1));
+              filter: drop-shadow(0px 25px 5px rgba(0, 0, 0, 0.1));
+      -webkit-transform: translatey(-10px);
+              transform: translatey(-10px);
+    }
+    100% {
+      -webkit-filter: drop-shadow(0px 15px 5px rgba(0, 0, 0, 0.4));
+              filter: drop-shadow(0px 15px 5px rgba(0, 0, 0, 0.4));
+      -webkit-transform: translatey(0px);
+              transform: translatey(0px);
+    }
+  }
+  @keyframes floating {
+    0% {
+      -webkit-filter: drop-shadow(0px 15px 5px rgba(0, 0, 0, 0.4));
+              filter: drop-shadow(0px 15px 5px rgba(0, 0, 0, 0.4));
+      -webkit-transform: translatey(0px);
+              transform: translatey(0px);
+    }
+    50% {
+      -webkit-filter: drop-shadow(0px 25px 5px rgba(0, 0, 0, 0.1));
+              filter: drop-shadow(0px 25px 5px rgba(0, 0, 0, 0.1));
+      -webkit-transform: translatey(-10px);
+              transform: translatey(-10px);
+    }
+    100% {
+      -webkit-filter: drop-shadow(0px 15px 5px rgba(0, 0, 0, 0.4));
+              filter: drop-shadow(0px 15px 5px rgba(0, 0, 0, 0.4));
+      -webkit-transform: translatey(0px);
+              transform: translatey(0px);
+    }
+  }
+  .rightPart {
+    margin-top: 120px;
+    margin-left: -265px;
+    width: 90%;
+  }
+  .textElement {
+    width: 100%;
+  }
+  h1 {
+    text-align: center;
+  }
+  main {
+    margin-top: 150px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
