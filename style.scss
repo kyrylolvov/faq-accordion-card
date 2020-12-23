@@ -85,10 +85,12 @@ h1 {
   width: 250px;
   display: inline;
   color: #4b4c5f;
-  font-weight: 400;
+}
+.visibleTextBold {
+  font-weight: 700;
 }
 .arrowImage {
-  margin-left: 70px;
+  float: right;
 }
 .arrowImageOpened {
   animation: rotationAnimation 0.4s forwards;
@@ -128,3 +130,4 @@ h1 {
 .closedText {
   display: none;
 }
+
