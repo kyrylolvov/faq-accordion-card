@@ -1,29 +1,32 @@
 "use strict";
 
 const clickArea = document.getElementsByClassName(`textArrowSection`);
-const text = document.querySelector(`.dropdownText`);
-const arrow = document.querySelector(`.arrowImage`);
-const dropDown = document.querySelector(`.dropdownText`);
+const text = document.querySelectorAll(`.dropdownText`);
+const arrow = document.querySelectorAll(`.arrowImage`);
+const dropDown = document.querySelectorAll(`.dropdownText`);
+const visibleText = document.querySelectorAll(`.visibleText`);
 
-const closeDropDown = function () {
-  text.classList.remove(`openedText`);
-  text.classList.add(`closedText`);
-  arrow.classList.add(`arrowImageClosed`);
-  arrow.classList.remove(`arrowImageOpened`);
+const closeDropDown = function (i) {
+  text[i].classList.remove(`openedText`);
+  text[i].classList.add(`closedText`);
+  arrow[i].classList.add(`arrowImageClosed`);
+  arrow[i].classList.remove(`arrowImageOpened`);
+  visibleText[i].classList.remove(`visibleTextBold`);
 };
 
-const openDropDown = function () {
-  text.classList.add(`openedText`);
-  text.classList.remove(`closedText`);
-  arrow.classList.add(`arrowImageOpened`);
-  arrow.classList.remove(`arrowImageClosed`);
+const openDropDown = function (i) {
+  text[i].classList.add(`openedText`);
+  text[i].classList.remove(`closedText`);
+  arrow[i].classList.add(`arrowImageOpened`);
+  arrow[i].classList.remove(`arrowImageClosed`);
+  visibleText[i].classList.add(`visibleTextBold`);
 };
-for (var i = 0; i < clickArea.length; i++) {
+for (let i = 0; i < clickArea.length; i++) {
   clickArea[i].addEventListener(`click`, function () {
-    if (dropDown.classList.contains("closedText")) {
-      openDropDown();
+    if (dropDown[i].classList.contains("closedText")) {
+      openDropDown(i);
     } else {
-      closeDropDown();
+      closeDropDown(i);
     }
   });
 }
