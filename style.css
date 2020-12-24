@@ -34,7 +34,7 @@ body {
 
 .box-wrap {
   border-radius: 20px;
-  margin: 120px auto 10px auto;
+  margin: 120px auto 80px auto;
   width: 920px;
   min-height: 509px;
   background: url(/images/bg-pattern-desktop.svg);
