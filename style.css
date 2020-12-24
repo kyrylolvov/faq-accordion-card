@@ -34,11 +34,11 @@ body {
 
 .box-wrap {
   border-radius: 20px;
-  margin: 80px auto 10px auto;
+  margin: 120px auto 10px auto;
   width: 920px;
   min-height: 509px;
   background: url(/images/bg-pattern-desktop.svg);
-  background-position: -576px 68%;
+  background-position: -576px -290px;
   background-repeat: no-repeat;
   background-color: white;
   overflow: hidden;
