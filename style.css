@@ -296,5 +296,7 @@ h1 {
 .box-wrap {
     height: auto;
   }
+  .dropdownText{
+    width: 288px;
 }
 /*# sourceMappingURL=style.css.map */
